@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "ws": "^8.20.0",
+    "youtube-transcript": "^1.3.0"
+  },
+  "name": "tabscribe",
+  "version": "2.1.0",
+  "description": "Uma extensão para navegador que permite selecionar abas e extrair o texto delas para copiar ou baixar em arquivo .txt.",
+  "main": "server/tabscribe-mcp.js",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "check": "node scripts/check-project.mjs",
+    "test:search": "node --experimental-vm-modules --test tests/integration/search-simulation.mjs",
+    "test": "npm run check && node --test tests/unit/*.test.mjs && npm run test:search",
+    "start:mcp": "node server/tabscribe-mcp.js",
+    "test:integration": "node tests/integration/mcp-client.js",
+    "test:mcp": "node tests/integration/mcp-smoke.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliasUruz/TabScribe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AliasUruz/TabScribe/issues"
+  },
+  "homepage": "https://github.com/AliasUruz/TabScribe#readme",
+  "private": true
+}

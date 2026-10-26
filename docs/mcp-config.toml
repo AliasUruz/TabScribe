@@ -1,0 +1,13 @@
+# Exemplo público: substitua C:\\CAMINHO pelo diretório real.
+# Ou gere a configuração local: node scripts/mcp-config.mjs
+[mcp_servers.tabscribe]
+command = "node"
+args = ["C:\\CAMINHO\\TabScribe\\server\\tabscribe-mcp.js"]
+cwd = "C:\\CAMINHO\\TabScribe"
+startup_timeout_sec = 15
+tool_timeout_sec = 90
+enabled = true
+
+[mcp_servers.tabscribe.env]
+TABSCRIBE_WS_PORT = "3031"
+TABSCRIBE_REQUEST_TIMEOUT_MS = "60000"
